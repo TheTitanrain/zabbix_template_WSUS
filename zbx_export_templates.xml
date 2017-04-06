@@ -24,12 +24,12 @@
             </applications>
             <items>
                 <item>
-                    <name>Get Count Pathes</name>
+                    <name>Get Count Patches</name>
                     <type>11</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>db.odbc.select[GetCountPathes,wsus-db]</key>
+                    <key>db.odbc.select[GetCountPatches,wsus-db]</key>
                     <delay>30</delay>
                     <history>7</history>
                     <trends>365</trends>
@@ -78,7 +78,7 @@ AND tbComputerTarget.FullDomainName = '{HOST.NAME}'</params>
     </templates>
     <triggers>
         <trigger>
-            <expression>{WSUS:db.odbc.select[GetCountPathes,wsus-db].last()}&gt;200</expression>
+            <expression>{WSUS:db.odbc.select[GetCountPatches,wsus-db].last()}&gt;200</expression>
             <name>Need to update: {ITEM.LASTVALUE}</name>
             <url/>
             <status>0</status>
