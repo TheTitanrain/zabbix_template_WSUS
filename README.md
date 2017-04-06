@@ -1,3 +1,7 @@
+# About Zabbix, unixODBC and MS SQL Server
+https://zabbix.org/wiki/Docs/howto/Microsoft_SQL_Server_monitoring_with_unixODBC_and_LLD
+https://support.zabbix.com/browse/ZBX-6839
+
 # Zabbix template (WSUS)
 
 ```sql
